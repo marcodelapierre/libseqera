@@ -28,9 +28,9 @@ import io.seqera.wave.core.spec.ContainerSpec;
  */
 public class ContainerInspectResponse {
 
-    ContainerSpec container;
+    public ContainerSpec container;
 
-    private ContainerInspectResponse() {
+    public ContainerInspectResponse() {
 
     }
 

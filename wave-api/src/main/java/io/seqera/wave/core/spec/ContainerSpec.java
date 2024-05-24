@@ -32,11 +32,11 @@ public class ContainerSpec {
     String imageName;
     String reference;
     String digest;
-    ConfigSpec config;
+    public ConfigSpec config;
     ManifestSpec manifest;
 
     /* REQUIRED BY SERIALIZATION */
-    private ContainerSpec() {}
+    public ContainerSpec() {}
 
     public ContainerSpec(String registry, String hostName, String imageName, String reference, String digest, ConfigSpec config, ManifestSpec manifest) {
         this.registry = registry;

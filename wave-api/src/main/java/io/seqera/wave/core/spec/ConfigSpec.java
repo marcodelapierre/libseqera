@@ -138,11 +138,11 @@ public class ConfigSpec {
     public Instant created;
     public Rootfs rootfs;
 
-    ConfigSpec() {
+    public ConfigSpec() {
         this(Map.of());
     }
 
-    ConfigSpec(Map<String,?> opts) {
+    public ConfigSpec(Map<String,?> opts) {
         this.architecture = (String) opts.get("architecture");
         this.container = (String) opts.get("container");
         this.config = new Config( opts.containsKey("config") ? (Map<String,?>) opts.get("config") : Map.of() );
